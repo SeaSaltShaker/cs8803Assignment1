@@ -17,6 +17,7 @@
 		F91EFF7021FBD0A300AC6E7A /* ExploreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91EFF6F21FBD0A300AC6E7A /* ExploreItem.swift */; };
 		F91EFF7221FBDCD800AC6E7A /* ExploreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91EFF7121FBDCD800AC6E7A /* ExploreDataManager.swift */; };
 		F91EFF7621FBE0D800AC6E7A /* ExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91EFF7521FBE0D800AC6E7A /* ExploreCell.swift */; };
+		F9D5581F21FBF07500EFFA34 /* RestaurantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5581E21FBF07500EFFA34 /* RestaurantListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		F91EFF7121FBDCD800AC6E7A /* ExploreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreDataManager.swift; sourceTree = "<group>"; };
 		F91EFF7521FBE0D800AC6E7A /* ExploreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCell.swift; sourceTree = "<group>"; };
 		F91F923D21FBA13D005AA2B2 /* FunctionsStructs.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FunctionsStructs.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F9D5581E21FBF07500EFFA34 /* RestaurantListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 		F90B5D2921FA9A39009C96DA = {
 			isa = PBXGroup;
 			children = (
+				F9D5581D21FBF05900EFFA34 /* Restaurants */,
 				F91EFF7321FBE09D00AC6E7A /* Explore */,
 				F91F923C21FBA128005AA2B2 /* Playground */,
 				F90B5D3421FA9A39009C96DA /* GetPhat */,
@@ -113,6 +116,14 @@
 				F91EFF6921FBA62200AC6E7A /* CollectionViewBasics.playground */,
 			);
 			path = Playground;
+			sourceTree = "<group>";
+		};
+		F9D5581D21FBF05900EFFA34 /* Restaurants */ = {
+			isa = PBXGroup;
+			children = (
+				F9D5581E21FBF07500EFFA34 /* RestaurantListViewController.swift */,
+			);
+			path = Restaurants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +201,7 @@
 				F90B5D4C21FAA10C009C96DA /* RestaurantViewController.swift in Sources */,
 				F90B5D3621FA9A39009C96DA /* AppDelegate.swift in Sources */,
 				F91EFF7021FBD0A300AC6E7A /* ExploreItem.swift in Sources */,
+				F9D5581F21FBF07500EFFA34 /* RestaurantListViewController.swift in Sources */,
 				F91EFF7221FBDCD800AC6E7A /* ExploreDataManager.swift in Sources */,
 				F91EFF6B21FBB7E200AC6E7A /* ExploreViewController.swift in Sources */,
 				F91EFF7621FBE0D800AC6E7A /* ExploreCell.swift in Sources */,

@@ -11,7 +11,7 @@ import UIKit
 class ExploreViewController: UIViewController, UICollectionViewDataSource {
     
     @IBOutlet weak var collectionView:UICollectionView!
-     let manager = ExploreDataManager()
+    let manager = ExploreDataManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()

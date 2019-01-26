@@ -256,10 +256,10 @@
             </objects>
             <point key="canvasLocation" x="1288.8" y="-504.19790104947532"/>
         </scene>
-        <!--Restaurant View Controller-->
+        <!--Restaurant List View Controller-->
         <scene sceneID="4ZD-sh-BI9">
             <objects>
-                <viewController id="jlM-ZZ-IpD" customClass="RestaurantViewController" customModule="GetPhat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jlM-ZZ-IpD" customClass="RestaurantListViewController" customModule="GetPhat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jJn-8w-ihn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -411,7 +411,7 @@
                         <viewLayoutGuide key="safeArea" id="KkE-gF-35P"/>
                     </view>
                     <connections>
-                        <outlet property="collectionView" destination="IWd-Kj-Cz1" id="OKW-rv-19D"/>
+                        <outlet property="collectionView" destination="IWd-Kj-Cz1" id="Qjl-uq-CuP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kSv-ni-PG1" userLabel="First Responder" sceneMemberID="firstResponder"/>
