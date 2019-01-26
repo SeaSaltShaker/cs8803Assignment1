@@ -13,7 +13,6 @@ class RestaurantListViewController: UIViewController, UICollectionViewDataSource
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         return collectionView.dequeueReusableCell(withReuseIdentifier: "restaurantCell", for: indexPath)
@@ -26,6 +25,5 @@ class RestaurantListViewController: UIViewController, UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
     }
-
-
+    
 }

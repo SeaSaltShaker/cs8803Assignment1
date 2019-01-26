@@ -8,18 +8,20 @@
 
 import UIKit
 
-class RestaurantViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class RestaurantViewController: UIViewController, UICollectionViewDelegate {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+}
+// MARK: Private Extension
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+private extension RestaurantViewController {}
+// MARK: UICollectionViewDataSource
+
+extension RestaurantViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         return collectionView.dequeueReusableCell(withReuseIdentifier: "restaurantCell", for: indexPath)
@@ -30,6 +32,7 @@ class RestaurantViewController: UIViewController, UICollectionViewDataSource, UI
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return 10
     }
+    
 }

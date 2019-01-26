@@ -8,15 +8,29 @@
 
 import UIKit
 
-class ExploreViewController: UIViewController, UICollectionViewDataSource {
+class ExploreViewController: UIViewController {
     
     @IBOutlet weak var collectionView:UICollectionView!
     let manager = ExploreDataManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        initialize()
+    }
+    
+}
+
+// MARK: Private Extension
+private extension ExploreViewController {
+    // code goes here
+    func initialize() {
         manager.fetch()
     }
+       //Finally, we add this line back as it was removed. We use this function to dismiss our location modal when you hit the Cancel button:
+    @IBAction func unwindLocationCancel(segue:UIStoryboardSegue){}
+}
+// MARK: UICollectionViewDataSource
+extension ExploreViewController: UICollectionViewDataSource {
     
     //This first method is what we need to add a header to our Collection View
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -47,11 +61,4 @@ class ExploreViewController: UIViewController, UICollectionViewDataSource {
         return manager.numberOfItems()
     }
     
-    
-    //Finally, we add this line back as it was removed. We use this function to dismiss our location modal when you hit the Cancel button:
-    @IBAction func unwindLocationCancel(segue:UIStoryboardSegue) {}
-    
-    
-
 }
-

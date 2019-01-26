@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 
 class RestaurantItem: NSObject, MKAnnotation {
-    dynamic var coordinate: CLLocationCoordinate2D //added to avoid errors...
+    var coordinate: CLLocationCoordinate2D //added to avoid errors...
     
     var name:String?
     var cuisines:[String] = []
@@ -20,6 +20,11 @@ class RestaurantItem: NSObject, MKAnnotation {
     var postalCode:String?
     var state:String?
     var imageURL:String?
+    var restaurantID:String?
+    var title: String?
+    //var subtitle: String?
+    
+
     
     init(dict:[String:AnyObject]){
         if let lat = dict["lat"] as? Double {self.lat = lat}
@@ -41,16 +46,16 @@ class RestaurantItem: NSObject, MKAnnotation {
         }
         
         var title: String? {
+            //self.title = name
             return name
         }
         
         var subtitle: String? {
-            if cuisines.isEmpty {return ""}
-            else if cuisines.count == 1 {return cuisines.first}
-            else {return cuisines.joined(separator: ", ")}
+            if cuisines.isEmpty { return "" }
+            else if cuisines.count == 1 { return cuisines.first }
+            else { return cuisines.joined(separator: ", ") }
         }
-        
-        
+
 
     }
 }
