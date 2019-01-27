@@ -34,6 +34,7 @@
 		F97D07D921FD0A18008C9387 /* Houston.json in Resources */ = {isa = PBXBuildFile; fileRef = F97D07CB21FD0A18008C9387 /* Houston.json */; };
 		F97D07DB21FD0A87008C9387 /* RestaurantAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97D07DA21FD0A87008C9387 /* RestaurantAPIManager.swift */; };
 		F97D07DD21FD0C49008C9387 /* LocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97D07DC21FD0C49008C9387 /* LocationItem.swift */; };
+		F97D07DF21FD40DF008C9387 /* ExploreHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97D07DE21FD40DF008C9387 /* ExploreHeaderView.swift */; };
 		F9832C1C21FCB050005894B0 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9832C1B21FCB050005894B0 /* LocationViewController.swift */; };
 		F9832C1E21FCB5DE005894B0 /* Locations.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9832C1D21FCB5DE005894B0 /* Locations.plist */; };
 		F9832C2021FCB751005894B0 /* LocationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9832C1F21FCB751005894B0 /* LocationDataManager.swift */; };
@@ -82,6 +83,7 @@
 		F97D07CB21FD0A18008C9387 /* Houston.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Houston.json; sourceTree = "<group>"; };
 		F97D07DA21FD0A87008C9387 /* RestaurantAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantAPIManager.swift; sourceTree = "<group>"; };
 		F97D07DC21FD0C49008C9387 /* LocationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationItem.swift; sourceTree = "<group>"; };
+		F97D07DE21FD40DF008C9387 /* ExploreHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreHeaderView.swift; sourceTree = "<group>"; };
 		F9832C1521FCACE1005894B0 /* TableViewsBasics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TableViewsBasics.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F9832C1B21FCB050005894B0 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		F9832C1D21FCB5DE005894B0 /* Locations.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Locations.plist; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				F91EFF7521FBE0D800AC6E7A /* ExploreCell.swift */,
+				F97D07DE21FD40DF008C9387 /* ExploreHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 				F9832C2A21FCC247005894B0 /* DataManager.swift in Sources */,
 				F97D07DD21FD0C49008C9387 /* LocationItem.swift in Sources */,
 				F9832C2621FCBECD005894B0 /* MapDataManager.swift in Sources */,
+				F97D07DF21FD40DF008C9387 /* ExploreHeaderView.swift in Sources */,
 				F90B5D3621FA9A39009C96DA /* AppDelegate.swift in Sources */,
 				F91EFF7021FBD0A300AC6E7A /* ExploreItem.swift in Sources */,
 				F9832C3121FCD9E2005894B0 /* Segue.swift in Sources */,

@@ -12,6 +12,8 @@ class ExploreViewController: UIViewController {
     
     @IBOutlet weak var collectionView:UICollectionView!
     let manager = ExploreDataManager()
+    var selectedCity:LocationItem?
+    var headerView: ExploreHeaderView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +30,16 @@ private extension ExploreViewController {
     }
        //Finally, we add this line back as it was removed. We use this function to dismiss our location modal when you hit the Cancel button:
     @IBAction func unwindLocationCancel(segue:UIStoryboardSegue){}
+    
+    //Done button - saves the selection and returns it to the previous screen
+    @IBAction func unwindLocationDone(segue:UIStoryboardSegue) {
+    if let viewController = segue.source as? LocationViewController {
+        selectedCity = viewController.selectedCity
+        if let location = selectedCity {
+            headerView.lblLocation.text = location.full
+            }
+        }
+    }
 }
 // MARK: UICollectionViewDataSource
 extension ExploreViewController: UICollectionViewDataSource {
@@ -35,7 +47,8 @@ extension ExploreViewController: UICollectionViewDataSource {
     //This first method is what we need to add a header to our Collection View
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         // The identifier is what we added when we were designing in earlier chapters. This identifier helps Xcode know what view we are referring to:
-        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "header", for: indexPath)
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "header", for: indexPath)
+        headerView = header as? ExploreHeaderView
         return headerView
     }
     

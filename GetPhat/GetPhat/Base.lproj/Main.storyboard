@@ -64,7 +64,11 @@
                                 <segue destination="rmc-vd-Kxq" kind="unwind" unwindAction="unwindLocationCancelWithSegue:" id="JbX-OX-bbF"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="foX-Kb-EF2"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="foX-Kb-EF2">
+                            <connections>
+                                <segue destination="rmc-vd-Kxq" kind="unwind" unwindAction="unwindLocationDoneWithSegue:" id="no9-VX-REC"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -184,14 +188,14 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="header" id="9oT-zl-Ide">
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="header" id="9oT-zl-Ide" customClass="ExploreHeaderView" customModule="GetPhat" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="San-g8-5Sa">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufD-GG-YgM">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufD-GG-YgM">
                                                     <rect key="frame" x="8" y="45" width="255" height="37"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="37" id="ZUs-96-7Ax"/>
@@ -200,17 +204,6 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qxp-hE-oUj">
-                                                    <rect key="frame" x="271" y="50" width="96" height="25"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="25" id="QoY-kc-gIH"/>
-                                                        <constraint firstAttribute="width" constant="96" id="bo7-x3-jvL"/>
-                                                    </constraints>
-                                                    <state key="normal" image="btn-location"/>
-                                                    <connections>
-                                                        <segue destination="gGg-1T-6hc" kind="presentation" id="cbJ-0J-hVp"/>
-                                                    </connections>
-                                                </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPy-eD-CMj">
                                                     <rect key="frame" x="8" y="24" width="351" height="21"/>
                                                     <constraints>
@@ -227,6 +220,17 @@
                                                         <constraint firstAttribute="height" constant="1" id="zsV-kH-auv"/>
                                                     </constraints>
                                                 </view>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qxp-hE-oUj">
+                                                    <rect key="frame" x="271" y="50" width="96" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="QoY-kc-gIH"/>
+                                                        <constraint firstAttribute="width" constant="96" id="bo7-x3-jvL"/>
+                                                    </constraints>
+                                                    <state key="normal" image="btn-location"/>
+                                                    <connections>
+                                                        <segue destination="gGg-1T-6hc" kind="presentation" id="cbJ-0J-hVp"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
@@ -250,6 +254,9 @@
                                         <constraint firstAttribute="trailing" secondItem="San-g8-5Sa" secondAttribute="trailing" id="AyF-6G-OgW"/>
                                         <constraint firstItem="San-g8-5Sa" firstAttribute="top" secondItem="9oT-zl-Ide" secondAttribute="top" id="ftS-1c-kXi"/>
                                     </constraints>
+                                    <connections>
+                                        <outlet property="lblLocation" destination="XPy-eD-CMj" id="fSO-KT-lC4"/>
+                                    </connections>
                                 </collectionReusableView>
                                 <connections>
                                     <outlet property="dataSource" destination="pnZ-tz-R6D" id="rRb-H6-zHr"/>
