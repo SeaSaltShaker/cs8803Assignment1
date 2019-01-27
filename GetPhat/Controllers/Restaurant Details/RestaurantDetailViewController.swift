@@ -1,9 +1,9 @@
 //
 //  RestaurantDetailViewController.swift
-//  LetsEat
+//  GetPhat
 //
-//  Created by Craig Clayton on 11/21/18.
-//  Copyright © 2018 Cocoa Academy. All rights reserved.
+//  Created by David Nguyenn on 25/1/19.
+//  Copyright © 2019 David Nguyen. All rights reserved.
 //
 
 import UIKit
@@ -11,9 +11,8 @@ import CoreLocation
 import MapKit
 
 class RestaurantDetailViewController: UITableViewController {
-
+    
     // Nav Bar
-    /*
     @IBOutlet weak var btnHeart: UIBarButtonItem!
     
     // Cell One
@@ -30,22 +29,20 @@ class RestaurantDetailViewController: UITableViewController {
     // Cell Eight
     @IBOutlet weak var lblAddress: UILabel!
     @IBOutlet weak var imgMap: UIImageView!
-    */
+    
     var selectedRestaurant:RestaurantItem?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        dump(selectedRestaurant as Any)
-        //initialize()
+        initialize()
     }
-    /*
+    
     func initialize() {
         setupLabels()
         createMap()
     }
- */
 }
-/*
+
 private extension RestaurantDetailViewController {
     
     func setupLabels() {
@@ -125,4 +122,3 @@ private extension RestaurantDetailViewController {
         }
     }
 }
-*/

@@ -14,28 +14,32 @@
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                    <view key="view" contentMode="center" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="detail-logo" translatesAutoresizingMaskIntoConstraints="NO" id="7Y9-9Z-UCc">
-                                <rect key="frame" x="77.5" y="277.5" width="220" height="112"/>
+                            <imageView autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="detail-logo" translatesAutoresizingMaskIntoConstraints="NO" id="7Y9-9Z-UCc">
+                                <rect key="frame" x="64" y="206.5" width="247" height="254"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.37618637084960938" green="0.69080853462219238" blue="0.95581918954849243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="7Y9-9Z-UCc" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="5f1-Tq-ehO"/>
-                            <constraint firstItem="7Y9-9Z-UCc" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="EdD-Tc-e07"/>
+                            <constraint firstItem="7Y9-9Z-UCc" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="733-ZQ-n9d"/>
+                            <constraint firstItem="7Y9-9Z-UCc" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ZfN-Z2-T5u"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
     <resources>
-        <image name="detail-logo" width="220" height="112"/>
+        <image name="detail-logo" width="247" height="254"/>
     </resources>
 </document>

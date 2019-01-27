@@ -1,9 +1,9 @@
 //
 //  RestaurantCell.swift
-//  LetsEat
+//  GetPhat
 //
-//  Created by Craig Clayton on 11/25/18.
-//  Copyright © 2018 Cocoa Academy. All rights reserved.
+//  Created by David Nguyen on 26/1/19.
+//  Copyright © 2019 David Nguyen. All rights reserved.
 //
 
 import UIKit

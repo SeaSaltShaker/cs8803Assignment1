@@ -127,28 +127,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gk8-GZ-JvC">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gk8-GZ-JvC">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="7" minimumInteritemSpacing="0.0" id="CqO-tn-EcC">
-                                    <size key="itemSize" width="196" height="154"/>
+                                    <size key="itemSize" width="164" height="195"/>
                                     <size key="headerReferenceSize" width="0.0" height="100"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="7" minY="7" maxX="7" maxY="7"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="exploreCell" id="wQB-Ze-1cl" customClass="ExploreCell" customModule="GetPhat" customModuleProvider="target">
-                                        <rect key="frame" x="7" y="107" width="176" height="195"/>
+                                        <rect key="frame" x="7" y="107" width="164" height="195"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="176" height="195"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="164" height="195"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jik-aZ-o8g">
-                                                    <rect key="frame" x="0.0" y="0.0" width="176" height="156"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="164" height="164"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LxM-Ri-usS">
-                                                            <rect key="frame" x="0.0" y="0.0" width="176" height="156"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="164" height="164"/>
                                                         </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -157,34 +157,33 @@
                                                         <constraint firstItem="LxM-Ri-usS" firstAttribute="leading" secondItem="Jik-aZ-o8g" secondAttribute="leading" id="9Ev-js-qvV"/>
                                                         <constraint firstItem="LxM-Ri-usS" firstAttribute="top" secondItem="Jik-aZ-o8g" secondAttribute="top" id="9Lo-Hf-oLC"/>
                                                         <constraint firstAttribute="bottom" secondItem="LxM-Ri-usS" secondAttribute="bottom" id="NQP-gl-tTx"/>
-                                                        <constraint firstAttribute="height" constant="156" id="RzL-1z-3mS"/>
+                                                        <constraint firstAttribute="height" constant="164" id="RzL-1z-3mS"/>
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSc-uL-cDO">
-                                                    <rect key="frame" x="8" y="165" width="160" height="21"/>
+                                                    <rect key="frame" x="6" y="169" width="152" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="rIp-Vo-A30"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="20"/>
+                                                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="CSc-uL-cDO" firstAttribute="top" secondItem="Jik-aZ-o8g" secondAttribute="bottom" constant="9" id="7gg-rw-hAS"/>
-                                            <constraint firstAttribute="trailing" secondItem="CSc-uL-cDO" secondAttribute="trailing" constant="8" id="8aj-Rh-o3p"/>
-                                            <constraint firstItem="CSc-uL-cDO" firstAttribute="leading" secondItem="wQB-Ze-1cl" secondAttribute="leading" constant="8" id="D6j-CM-Sa9"/>
+                                            <constraint firstItem="CSc-uL-cDO" firstAttribute="top" secondItem="Jik-aZ-o8g" secondAttribute="bottom" constant="5" id="7gg-rw-hAS"/>
+                                            <constraint firstAttribute="trailing" secondItem="CSc-uL-cDO" secondAttribute="trailing" constant="6" id="8aj-Rh-o3p"/>
+                                            <constraint firstItem="CSc-uL-cDO" firstAttribute="leading" secondItem="wQB-Ze-1cl" secondAttribute="leading" constant="6" id="D6j-CM-Sa9"/>
                                             <constraint firstAttribute="trailing" secondItem="Jik-aZ-o8g" secondAttribute="trailing" id="FJY-NC-pBd"/>
                                             <constraint firstItem="Jik-aZ-o8g" firstAttribute="leading" secondItem="wQB-Ze-1cl" secondAttribute="leading" id="awO-mI-ZZe"/>
                                             <constraint firstItem="Jik-aZ-o8g" firstAttribute="top" secondItem="wQB-Ze-1cl" secondAttribute="top" id="vqF-th-uHN"/>
                                         </constraints>
-                                        <size key="customSize" width="176" height="195"/>
                                         <connections>
                                             <outlet property="imgExplore" destination="LxM-Ri-usS" id="aii-IC-Z9u"/>
                                             <outlet property="lblName" destination="CSc-uL-cDO" id="Tl1-O1-rrn"/>
-                                            <segue destination="jlM-ZZ-IpD" kind="show" id="MdX-hW-LfG"/>
+                                            <segue destination="jlM-ZZ-IpD" kind="show" identifier="restaurantList" id="MdX-hW-LfG"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -204,7 +203,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPy-eD-CMj">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHOOSE THE LOCATION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPy-eD-CMj">
                                                     <rect key="frame" x="8" y="24" width="351" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="wlm-J2-45T"/>
@@ -228,7 +227,7 @@
                                                     </constraints>
                                                     <state key="normal" image="btn-location"/>
                                                     <connections>
-                                                        <segue destination="gGg-1T-6hc" kind="presentation" id="cbJ-0J-hVp"/>
+                                                        <segue destination="gGg-1T-6hc" kind="presentation" identifier="locationList" id="cbJ-0J-hVp"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -300,7 +299,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="restaurantCell" id="OMM-Mz-6zj">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="restaurantCell" id="OMM-Mz-6zj" customClass="RestaurantCell" customModule="GetPhat" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="312"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -417,7 +416,10 @@
                                         </constraints>
                                         <size key="customSize" width="375" height="312"/>
                                         <connections>
-                                            <segue destination="LDA-MI-YSx" kind="show" id="eLg-eU-wQX"/>
+                                            <outlet property="imgRestaurant" destination="G2C-bO-R47" id="FhO-rn-Abi"/>
+                                            <outlet property="lblCuisine" destination="T4X-Le-nhZ" id="Ffo-LA-zY6"/>
+                                            <outlet property="lblTitle" destination="WGR-3V-h4J" id="VBd-3D-9sL"/>
+                                            <segue destination="Zdm-jb-GPa" kind="show" id="2O7-2Z-J2n"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -619,4 +621,7 @@
             <color red="0.1080000028014183" green="0.88899999856948853" blue="0.67799997329711914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="2O7-2Z-J2n"/>
+    </inferredMetricsTieBreakers>
 </document>

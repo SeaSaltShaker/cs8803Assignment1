@@ -48,6 +48,9 @@
 		F9832C3621FCDB35005894B0 /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9832C3421FCDB35005894B0 /* RestaurantDetailViewController.swift */; };
 		F9832C3921FCDD36005894B0 /* PhotoFilter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9832C3821FCDD35005894B0 /* PhotoFilter.storyboard */; };
 		F9832C3C21FCDD55005894B0 /* ReviewForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9832C3B21FCDD55005894B0 /* ReviewForm.storyboard */; };
+		F9BACED121FD60230082E796 /* RestaurantDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BACED021FD60230082E796 /* RestaurantDataManager.swift */; };
+		F9BACED521FD63470082E796 /* NoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BACED321FD63470082E796 /* NoDataView.swift */; };
+		F9BACED621FD63470082E796 /* NoDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9BACED421FD63470082E796 /* NoDataView.xib */; };
 		F9D5581F21FBF07500EFFA34 /* RestaurantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5581E21FBF07500EFFA34 /* RestaurantListViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +101,9 @@
 		F9832C3421FCDB35005894B0 /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		F9832C3821FCDD35005894B0 /* PhotoFilter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PhotoFilter.storyboard; sourceTree = "<group>"; };
 		F9832C3B21FCDD55005894B0 /* ReviewForm.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ReviewForm.storyboard; sourceTree = "<group>"; };
+		F9BACED021FD60230082E796 /* RestaurantDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDataManager.swift; sourceTree = "<group>"; };
+		F9BACED321FD63470082E796 /* NoDataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoDataView.swift; sourceTree = "<group>"; };
+		F9BACED421FD63470082E796 /* NoDataView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoDataView.xib; sourceTree = "<group>"; };
 		F9D5581E21FBF07500EFFA34 /* RestaurantListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,8 +155,8 @@
 		F91EFF6C21FBCFE200AC6E7A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F91EFF6D21FBD06600AC6E7A /* ExploreData.plist */,
 				F91EFF6F21FBD0A300AC6E7A /* ExploreItem.swift */,
+				F91EFF6D21FBD06600AC6E7A /* ExploreData.plist */,
 				F91EFF7121FBDCD800AC6E7A /* ExploreDataManager.swift */,
 			);
 			path = Model;
@@ -283,6 +289,7 @@
 		F9832C2721FCC211005894B0 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				F9BACED221FD63470082E796 /* No Data */,
 				F97D07BD21FD0A18008C9387 /* JSON */,
 				F9832C2821FCC218005894B0 /* Common */,
 				F9832C2921FCC247005894B0 /* DataManager.swift */,
@@ -335,8 +342,18 @@
 		F9832C3D21FCF43E005894B0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F9BACED021FD60230082E796 /* RestaurantDataManager.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F9BACED221FD63470082E796 /* No Data */ = {
+			isa = PBXGroup;
+			children = (
+				F9BACED321FD63470082E796 /* NoDataView.swift */,
+				F9BACED421FD63470082E796 /* NoDataView.xib */,
+			);
+			path = "No Data";
 			sourceTree = "<group>";
 		};
 		F9D5581D21FBF05900EFFA34 /* Restaurants */ = {
@@ -416,6 +433,7 @@
 				F9832C1E21FCB5DE005894B0 /* Locations.plist in Resources */,
 				F97D07D221FD0A18008C9387 /* New Orleans.json in Resources */,
 				F97D07D921FD0A18008C9387 /* Houston.json in Resources */,
+				F9BACED621FD63470082E796 /* NoDataView.xib in Resources */,
 				F97D07D521FD0A18008C9387 /* San Antonio.json in Resources */,
 				F97D07D821FD0A18008C9387 /* Los Angeles.json in Resources */,
 				F97D07D121FD0A18008C9387 /* Las Vegas.json in Resources */,
@@ -440,6 +458,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9BACED121FD60230082E796 /* RestaurantDataManager.swift in Sources */,
 				F97D07DB21FD0A87008C9387 /* RestaurantAPIManager.swift in Sources */,
 				F90B5D4C21FAA10C009C96DA /* RestaurantViewController.swift in Sources */,
 				F9832C2A21FCC247005894B0 /* DataManager.swift in Sources */,
@@ -449,6 +468,7 @@
 				F90B5D3621FA9A39009C96DA /* AppDelegate.swift in Sources */,
 				F91EFF7021FBD0A300AC6E7A /* ExploreItem.swift in Sources */,
 				F9832C3121FCD9E2005894B0 /* Segue.swift in Sources */,
+				F9BACED521FD63470082E796 /* NoDataView.swift in Sources */,
 				F9D5581F21FBF07500EFFA34 /* RestaurantListViewController.swift in Sources */,
 				F9832C3621FCDB35005894B0 /* RestaurantDetailViewController.swift in Sources */,
 				F97D07BC21FD083E008C9387 /* RestaurantCell.swift in Sources */,
