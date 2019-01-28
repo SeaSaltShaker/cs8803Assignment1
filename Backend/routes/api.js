@@ -6,9 +6,14 @@ var User = require('../models/user');
 var userRoutes = require('./userRoutes');
 
 module.exports = function(app, express) {
+    var apiRouter = express.Router();
+    
     //USER route to modify the list of restaurants.
     //Pass the restaurant name and that's it.
-    apiRouter.route('/add').post(userRoutes.modify);
+    apiRouter.route('/add').put(userRoutes.modify);
+    
+    //Create a new USER
+    apiRouter.route('/add').post(userRoutes.create);
     
     return apiRouter;
 };

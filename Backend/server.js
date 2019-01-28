@@ -7,6 +7,7 @@ var mongoose = require('mongoose');
 var path = require('path');
 var morgan = require('morgan');
 var config = require('./config');
+var bodyParser  = require('body-parser');
 
 //parse POST queries
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -35,7 +36,7 @@ app.use(express.static(__dirname + '/'));
 
 //ROUTES FOR THE API
 //COMPLETE ROUTES ON RELEVANT FILE
-var apiRoutes = require('/routes/api')(app, express);
+var apiRoutes = require('./routes/api')(app, express);
 app.use('/api', apiRoutes);
 
 //MAIN CATCHALL ROUTE - SEND USERS TO FRONTEND
