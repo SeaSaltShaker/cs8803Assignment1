@@ -27,7 +27,7 @@ app.use(morgan('dev'));
 //variable for accepting promises
 mongoose.Promise = global.Promise;
 
-//connect to our database (mlab)
+//connect to our database (atlas)
 mongoose.connect(config.database);
 
 //set static files location

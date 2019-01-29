@@ -10,10 +10,19 @@ module.exports = function(app, express) {
     
     //USER route to modify the list of restaurants.
     //Pass the restaurant name and that's it.
-    apiRouter.route('/add').put(userRoutes.modify);
+    apiRouter.route('/users/:user_id').put(userRoutes.modify);
     
     //Create a new USER
-    apiRouter.route('/add').post(userRoutes.create);
+    apiRouter.route('/users').post(userRoutes.create);
+    
+    //loading the list of users
+    apiRouter.route('/users').get(userRoutes.list);
+    
+    //delete the user with given id
+    apiRouter.route('/users/:user_id').delete(userRoutes.expunge);
+    
+    //Return the user with a given id
+    apiRouter.route('/users/:user_id').get(userRoutes.retrieve);    
     
     return apiRouter;
 };
