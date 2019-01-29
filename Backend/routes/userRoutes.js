@@ -32,7 +32,7 @@ exports.modify = function(req, res) {
         if(user != null){
         
             if(req.body.past_restaurants) user.past_restaurants.push(req.body.past_restaurants);
-            console.log(user.past_restaurants);
+            //console.log(user.past_restaurants);
             user.save(function(err) {
                 if(err) res.send(err);
                 
